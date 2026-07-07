@@ -93,6 +93,11 @@ export default function Nav() {
         .nav__links :global(a.is-active) {
           border-bottom-color: currentColor;
         }
+        .nav--solid .nav__links :global(a:hover),
+        .nav--solid .nav__links :global(a.is-active) {
+          color: var(--plum);
+          border-bottom-color: var(--plum);
+        }
         .nav__burger {
           display: none;
           background: none;
