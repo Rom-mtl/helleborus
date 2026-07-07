@@ -84,8 +84,11 @@ export default function APropos() {
             </p>
             <p>
               <strong>Artisanat local</strong>
-              [À REMPLACER : ses engagements réels — producteurs locaux,
-              circuits courts, zéro mousse florale… Ne rien inventer.]
+              Des producteurs locaux, des circuits courts, des fleurs
+              françaises autant que la saison le permet : choisir à
+              quelques kilomètres plutôt qu&apos;à l&apos;autre bout du
+              monde, c&apos;est soutenir ceux qui cultivent bien — et
+              offrir des fleurs plus fraîches, qui durent.
             </p>
           </div>
           <p style={{ marginTop: '2.5rem' }}>
