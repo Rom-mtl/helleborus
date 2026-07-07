@@ -1,4 +1,5 @@
 import PageHero from '../../components/PageHero';
+import FlowerDivider from '../../components/FlowerDivider';
 import { site } from '../../lib/site';
 
 export const metadata = {
@@ -23,7 +24,7 @@ export default function Contact() {
           <div>
             <span className="eyebrow">Parlons-en</span>
             <h2>Racontez-nous votre&nbsp;événement</h2>
-            <hr className="hr-leaf" style={{ marginInline: 0 }} />
+            <FlowerDivider align="left" />
             <p style={{ marginBottom: '2.5rem' }}>
               Chaque projet commence par une conversation. Écrivez-nous
               quelques lignes sur ce que vous préparez — nous revenons vers

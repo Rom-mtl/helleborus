@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { site } from '../lib/site';
+import FlowerDivider from '../components/FlowerDivider';
 
 export const metadata = {
   title: `${site.name} — Fleuriste événementiel, mariages & réceptions`,
@@ -33,7 +34,7 @@ export default function Home() {
         <div className="container narrow">
           <span className="eyebrow">La maison</span>
           <h2>Une signature florale poétique&nbsp;et&nbsp;intemporelle</h2>
-          <hr className="hr-leaf" />
+          <FlowerDivider />
           <p className="lead">
             Chaque événement est unique. Nous imaginons des décors floraux
             sur mesure, composés de fleurs de saison, pour transformer vos

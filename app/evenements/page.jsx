@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PageHero from '../../components/PageHero';
+import FlowerDivider from '../../components/FlowerDivider';
 
 export const metadata = {
   title: 'Événements',
@@ -21,7 +22,7 @@ export default function Evenements() {
         <div className="container narrow">
           <span className="eyebrow">Réceptions &amp; célébrations</span>
           <h2>Des décors qui marquent les&nbsp;esprits</h2>
-          <hr className="hr-leaf" />
+          <FlowerDivider />
           <p className="lead">
             Un anniversaire, un baptême, un dîner d&apos;exception, un
             lancement de produit : les fleurs donnent le ton avant même le
@@ -41,7 +42,7 @@ export default function Evenements() {
           <div>
             <span className="eyebrow">Particuliers</span>
             <h2>Événements privés</h2>
-            <hr className="hr-leaf" style={{ marginInline: 0 }} />
+            <FlowerDivider align="left" />
             <p style={{ marginBottom: '1.25rem' }}>
               Anniversaires, fiançailles, baptêmes, fêtes de famille : nous
               créons des décors floraux à la hauteur de vos plus belles
@@ -60,7 +61,7 @@ export default function Evenements() {
           <div>
             <span className="eyebrow">Professionnels</span>
             <h2>Entreprises &amp; marques</h2>
-            <hr className="hr-leaf" style={{ marginInline: 0 }} />
+            <FlowerDivider align="left" />
             <p style={{ marginBottom: '1.25rem' }}>
               Lancements, soirées d&apos;entreprise, vitrines, shootings,
               abonnements floraux pour vos espaces d&apos;accueil : nous

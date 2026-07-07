@@ -110,6 +110,33 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 .section--plum {
   background: var(--plum);
   color: var(--paper);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Filigrane floral au trait, très discret (charte) */
+.section--plum::before,
+.section--plum::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 340px;
+  height: 340px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-32 -32 64 64'%3E%3Cg fill='none' stroke='%23e8d9d6' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(72)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(144)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(216)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(288)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Ccircle r='2.5'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / contain;
+  opacity: 0.08;
+}
+
+.section--plum::before {
+  top: -90px;
+  right: -70px;
+  transform: rotate(18deg);
+}
+
+.section--plum::after {
+  bottom: -110px;
+  left: -80px;
+  transform: rotate(-24deg);
 }
 
 .section--plum .eyebrow { color: var(--blush); }
@@ -412,12 +439,24 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   margin-inline: auto;
 }
 
-.hr-leaf {
-  border: none;
-  width: 48px;
+/* Séparateur floral : trait — hellébore — trait */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--sage);
+  margin: 2.5rem auto;
+}
+
+.divider--left {
+  justify-content: flex-start;
+}
+
+.divider__line {
+  width: 40px;
   height: 1px;
   background: var(--sage);
-  margin: 2.5rem auto;
 }
 
 .meta-list {

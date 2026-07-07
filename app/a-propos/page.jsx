@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PageHero from '../../components/PageHero';
+import FlowerDivider from '../../components/FlowerDivider';
 import { site } from '../../lib/site';
 
 export const metadata = {
@@ -29,7 +30,7 @@ export default function APropos() {
           <div>
             <span className="eyebrow">Rencontre</span>
             <h2>{site.contact.person}</h2>
-            <hr className="hr-leaf" style={{ marginInline: 0 }} />
+            <FlowerDivider align="left" />
             <p style={{ marginBottom: '1.25rem' }}>
               Fleuriste depuis plus de quinze ans, j&apos;ai affûté mon
               regard au sein de belles maisons, à Lyon puis à
@@ -54,7 +55,7 @@ export default function APropos() {
         <div className="container narrow">
           <span className="eyebrow">Le nom</span>
           <h2>Pourquoi Helleborus&nbsp;?</h2>
-          <hr className="hr-leaf" />
+          <FlowerDivider />
           <p>
             L&apos;hellébore — <em>Helleborus</em> en latin — est surnommée
             la rose de Noël. C&apos;est l&apos;une des rares fleurs à
@@ -70,7 +71,7 @@ export default function APropos() {
         <div className="container narrow">
           <span className="eyebrow">Engagements</span>
           <h2>Notre façon de travailler</h2>
-          <hr className="hr-leaf" />
+          <FlowerDivider />
           <div className="meta-list" style={{ textAlign: 'left' }}>
             <p>
               <strong>Fleurs de saison</strong>

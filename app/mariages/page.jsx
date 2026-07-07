@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PageHero from '../../components/PageHero';
+import FlowerDivider from '../../components/FlowerDivider';
 
 export const metadata = {
   title: 'Mariages',
@@ -21,7 +22,7 @@ export default function Mariages() {
         <div className="container narrow">
           <span className="eyebrow">Votre jour</span>
           <h2>Une création florale unique, à&nbsp;votre&nbsp;image</h2>
-          <hr className="hr-leaf" />
+          <FlowerDivider />
           <p className="lead">
             Du bouquet de mariée à la scénographie complète de votre
             réception, nous imaginons un univers floral cohérent, qui vous
