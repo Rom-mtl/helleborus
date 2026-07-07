@@ -55,7 +55,7 @@ export default function Nav() {
             className="nav__insta"
             aria-label="Instagram Helléborus"
           >
-            <InstagramIcon />
+            <InstagramIcon size={16} />
             <span className="nav__insta-label">Instagram</span>
           </a>
         </nav>
@@ -91,6 +91,7 @@ export default function Nav() {
         .nav__links {
           display: flex;
           gap: 2.2rem;
+          align-items: center;
         }
         .nav__links :global(a) {
           font-size: 0.72rem;
@@ -113,8 +114,9 @@ export default function Nav() {
           display: inline-flex;
           align-items: center;
           gap: 0.5rem;
-          border-bottom: none;
-          padding-bottom: 0;
+        }
+        .nav__links :global(a.nav__insta svg) {
+          display: block;
         }
         .nav__insta-label {
           display: none;
