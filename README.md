@@ -46,7 +46,7 @@ la liste en haut de `app/galerie/page.jsx`.
 - [ ] Dans la zone DNS du registrar :
 
   ```
-  www      CNAME   <ton-user>.github.io.
+  www      CNAME   rom-mtl.github.io.
   @        A       185.199.108.153
   @        A       185.199.109.153
   @        A       185.199.110.153
@@ -65,9 +65,9 @@ la liste en haut de `app/galerie/page.jsx`.
 - Sans ça, le formulaire ne fonctionne pas ; les visiteurs ont quand même
   l'email et le téléphone affichés à côté.
 
-### 4. GitHub
+### 4. GitHub — repo : [Rom-mtl/helleborus](https://github.com/Rom-mtl/helleborus)
 
-- [ ] Créer le repo, pousser `main`
+- [ ] Pousser `main` (remote `origin` déjà configuré)
 - [ ] Settings → Pages → Source : **GitHub Actions**
 - [ ] Settings → Pages → Custom domain : `www.maison-helleborus.fr`,
       cocher **Enforce HTTPS** (dispo ~1 h après la propagation DNS)
