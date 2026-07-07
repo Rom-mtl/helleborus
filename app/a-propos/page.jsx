@@ -5,7 +5,7 @@ import { site } from '../../lib/site';
 export const metadata = {
   title: 'À propos',
   description:
-    "Justine Lemoine, fondatrice d'Helléborus : une fleuriste passionnée, une signature florale poétique inspirée de la rose de Noël.",
+    "Justine Lemoine, fondatrice d'Helleborus : une fleuriste passionnée, une signature florale poétique inspirée de la rose de Noël.",
 };
 
 export default function APropos() {
@@ -15,7 +15,7 @@ export default function APropos() {
         eyebrow="La maison"
         title="À propos"
         image="/images/apropos-hero.jpg"
-        alt="Atelier floral Helléborus"
+        alt="Atelier floral Helleborus"
       />
 
       <section className="section">
@@ -23,7 +23,7 @@ export default function APropos() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/portrait.jpg"
-            alt={`${site.contact.person}, fondatrice d'Helléborus`}
+            alt={`${site.contact.person}, fondatrice d'Helleborus`}
             style={{ aspectRatio: '3 / 4', objectFit: 'cover', width: '100%' }}
           />
           <div>
@@ -53,7 +53,7 @@ export default function APropos() {
       <section className="section section--soft center">
         <div className="container narrow">
           <span className="eyebrow">Le nom</span>
-          <h2>Pourquoi Helléborus&nbsp;?</h2>
+          <h2>Pourquoi Helleborus&nbsp;?</h2>
           <hr className="hr-leaf" />
           <p>
             L&apos;hellébore — <em>Helleborus</em> en latin — est surnommée

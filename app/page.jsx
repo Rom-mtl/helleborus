@@ -16,11 +16,11 @@ export default function Home() {
         <img
           className="hero__img"
           src="/images/hero.jpg"
-          alt="Scénographie florale de mariage signée Helléborus"
+          alt="Scénographie florale de mariage signée Helleborus"
         />
         <div className="hero__inner">
           <span className="eyebrow">Fleuriste événementiel</span>
-          <h1>Helléborus</h1>
+          <h1>Helleborus</h1>
           <p>Des fleurs qui racontent votre histoire — mariages, réceptions
             &amp; événements d&apos;exception</p>
           <Link href="/contact/" className="btn">
@@ -104,7 +104,7 @@ export default function Home() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/prestation-galerie.jpg"
-                    alt="Composition florale — galerie Helléborus"
+                    alt="Composition florale — galerie Helleborus"
                   />
                 </div>
               </Link>
@@ -124,7 +124,7 @@ export default function Home() {
       {/* ===== Le nom ===== */}
       <section className="section section--plum center">
         <div className="container">
-          <span className="eyebrow">Helléborus</span>
+          <span className="eyebrow">Helleborus</span>
           <p className="quote">
             «&nbsp;L&apos;hellébore, la rose de Noël, est la fleur qui ose
             fleurir en plein hiver. Comme elle, nous croyons que la beauté

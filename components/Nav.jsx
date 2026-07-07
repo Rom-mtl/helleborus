@@ -25,7 +25,7 @@ export default function Nav() {
     <header className={`nav ${scrolled || open ? 'nav--solid' : ''}`}>
       <div className="nav__inner container">
         <Link href="/" className="nav__brand">
-          Helléborus
+          Helleborus
         </Link>
 
         <button
@@ -53,7 +53,7 @@ export default function Nav() {
             target="_blank"
             rel="noreferrer"
             className="nav__insta"
-            aria-label="Instagram Helléborus"
+            aria-label="Instagram Helleborus"
           >
             <InstagramIcon size={16} />
             <span className="nav__insta-label">Instagram</span>

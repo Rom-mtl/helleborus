@@ -4,7 +4,7 @@ import { site } from '../../lib/site';
 export const metadata = {
   title: 'Galerie',
   description:
-    "Nos réalisations florales : mariages, réceptions, scénographies. Un aperçu de l'univers Helléborus.",
+    "Nos réalisations florales : mariages, réceptions, scénographies. Un aperçu de l'univers Helleborus.",
 };
 
 // Pour ajouter/retirer une photo : modifier cette liste + déposer le
@@ -27,7 +27,7 @@ export default function Galerie() {
         eyebrow="Réalisations"
         title="Galerie"
         image="/images/galerie-hero.jpg"
-        alt="Réalisations florales Helléborus"
+        alt="Réalisations florales Helleborus"
       />
 
       <section className="section">

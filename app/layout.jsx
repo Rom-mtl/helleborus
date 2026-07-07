@@ -25,7 +25,7 @@ export const metadata = {
     template: `%s — ${site.name}`,
   },
   description:
-    "Helléborus crée des décors floraux sur mesure pour mariages, réceptions privées et événements : bouquets, arches, scénographies. Basé à " +
+    "Helleborus crée des décors floraux sur mesure pour mariages, réceptions privées et événements : bouquets, arches, scénographies. Basé à " +
     site.area.base +
     ', intervient dans toute la région et au-delà.',
   openGraph: {

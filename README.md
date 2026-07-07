@@ -1,4 +1,4 @@
-# Helléborus — site vitrine
+# Helleborus — site vitrine
 
 Site statique construit avec **Next.js 15** (export statique via
 `output: 'export'`), déployé sur **GitHub Pages**, domaine
