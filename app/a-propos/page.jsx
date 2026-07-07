@@ -31,20 +31,20 @@ export default function APropos() {
             <h2>{site.contact.person}</h2>
             <hr className="hr-leaf" style={{ marginInline: 0 }} />
             <p style={{ marginBottom: '1.25rem' }}>
-              Fleuriste depuis plus de quinze ans, Justine a affûté son
+              Fleuriste depuis plus de quinze ans, j&apos;ai affûté mon
               regard au sein de belles maisons, à Lyon puis à
-              Aix-en-Provence. De ces années d&apos;atelier, elle garde une
+              Aix-en-Provence. De ces années d&apos;atelier, je garde une
               exigence — celle du geste juste — et l&apos;envie, mûrie au
-              fil des saisons, de créer sous son propre nom.
+              fil des saisons, de créer sous mon propre nom.
             </p>
             <p>
               L&apos;événementiel s&apos;est imposé comme une évidence :
               un mariage, une réception, c&apos;est un décor entier à
               imaginer, une histoire à raconter en fleurs. Ce qui
-              l&apos;anime par-dessus tout, c&apos;est la création —
-              proposer, oser, surprendre — et transformer les envies de
-              ses clients en quelque chose qu&apos;ils n&apos;auraient pas
-              su rêver eux-mêmes.
+              m&apos;anime par-dessus tout, c&apos;est la création —
+              proposer, oser, surprendre — et transformer vos envies en
+              quelque chose que vous n&apos;auriez pas su rêver
+              vous-même.
             </p>
           </div>
         </div>
