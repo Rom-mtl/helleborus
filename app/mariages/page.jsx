@@ -125,7 +125,7 @@ export default function Mariages() {
         </div>
       </section>
 
-      <section className="section section--forest center">
+      <section className="section section--plum center">
         <div className="container narrow">
           <span className="eyebrow">Votre mariage</span>
           <p className="quote">

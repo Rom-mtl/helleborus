@@ -10,7 +10,7 @@ export default function MentionsLegales() {
     <>
       {/* Bandeau simple (pas d'image) : fond sombre pour la lisibilité de la nav */}
       <section
-        className="section--forest center"
+        className="section--plum center"
         style={{ padding: 'clamp(8rem, 15vw, 11rem) var(--gutter) 4rem' }}
       >
         <span className="eyebrow">Informations</span>

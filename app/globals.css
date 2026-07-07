@@ -1,19 +1,19 @@
 /* ============================================================
    HELLÉBORUS — design system
-   Palette inspirée de l'hellébore (rose de Noël) :
-   blancs chauds, verts profonds, rose poudré discret.
+   Palette prune & lin (l'hellébore existe en pourpre) :
+   lins chauds, prune profond, mauve grisé, rosé discret.
    ============================================================ */
 
 :root {
   /* Couleurs */
-  --paper: #faf8f4;      /* fond principal, blanc cassé chaud */
-  --paper-soft: #f3efe7; /* fond de section alternée */
-  --ink: #23271f;        /* texte, presque noir teinté vert */
-  --ink-soft: #5c6153;   /* texte secondaire */
-  --forest: #3a4634;     /* vert hellébore profond — accents */
-  --sage: #8a9480;       /* vert sauge — détails */
-  --blush: #e9dcd3;      /* rose poudré — touches rares */
-  --line: #e2dccf;       /* bordures fines */
+  --paper: #f6f1e7;      /* fond principal, lin clair */
+  --paper-soft: #ece4d4; /* fond de section alternée, lin soutenu */
+  --ink: #2a2026;        /* texte, presque noir teinté prune */
+  --ink-soft: #5f525b;   /* texte secondaire, gris prune */
+  --plum: #4e2a3f;       /* prune profond — accents */
+  --mauve: #96788b;      /* mauve grisé — détails */
+  --blush: #e8d9d6;      /* rosé pâle — touches rares */
+  --line: #e0d6c4;       /* bordures fines, lin ombré */
 
   /* Typo (variables injectées par next/font dans layout.jsx) */
   --font-display: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
@@ -75,7 +75,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   font-weight: 400;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--sage);
+  color: var(--mauve);
   display: block;
   margin-bottom: 1.25rem;
 }
@@ -103,12 +103,12 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   background: var(--paper-soft);
 }
 
-.section--forest {
-  background: var(--forest);
+.section--plum {
+  background: var(--plum);
   color: var(--paper);
 }
 
-.section--forest .eyebrow { color: var(--blush); }
+.section--plum .eyebrow { color: var(--blush); }
 
 .center { text-align: center; }
 
@@ -139,21 +139,21 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   border-color: var(--ink);
 }
 
-.section--forest .btn:hover {
+.section--plum .btn:hover {
   background: var(--paper);
-  color: var(--forest);
+  color: var(--plum);
   border-color: var(--paper);
 }
 
 .btn--solid {
-  background: var(--forest);
+  background: var(--plum);
   color: var(--paper);
-  border-color: var(--forest);
+  border-color: var(--plum);
 }
 
 .btn--solid:hover {
   background: transparent;
-  color: var(--forest);
+  color: var(--plum);
 }
 
 /* ---------- Hero ---------- */
@@ -183,7 +183,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(rgba(20, 24, 18, 0.25), rgba(20, 24, 18, 0.45));
+  background: linear-gradient(rgba(32, 22, 30, 0.25), rgba(32, 22, 30, 0.45));
 }
 
 .hero__inner {
@@ -280,14 +280,14 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   font-size: 0.78rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--sage);
+  border-bottom: 1px solid var(--mauve);
   padding-bottom: 0.35rem;
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 .link:hover {
-  color: var(--forest);
-  border-color: var(--forest);
+  color: var(--plum);
+  border-color: var(--plum);
 }
 
 /* ---------- Galerie ---------- */
@@ -336,7 +336,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   content: counter(step, decimal-leading-zero);
   font-family: var(--font-display);
   font-size: 2rem;
-  color: var(--sage);
+  color: var(--mauve);
 }
 
 .step h3 { margin-bottom: 0.5rem; }
@@ -377,7 +377,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 .form select:focus,
 .form textarea:focus {
   outline: none;
-  border-bottom-color: var(--forest);
+  border-bottom-color: var(--plum);
 }
 
 .form textarea {
@@ -406,7 +406,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   border: none;
   width: 48px;
   height: 1px;
-  background: var(--sage);
+  background: var(--mauve);
   margin: 2.5rem auto;
 }
 
@@ -422,7 +422,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--sage);
+  color: var(--mauve);
   margin-bottom: 0.2rem;
 }
 
@@ -433,8 +433,8 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 /* ---------- Footer ---------- */
 
 .footer {
-  background: var(--forest);
-  color: rgba(250, 248, 244, 0.85);
+  background: var(--plum);
+  color: rgba(246, 241, 231, 0.85);
   padding-block: 4rem 2rem;
   font-size: 0.95rem;
 }
@@ -446,7 +446,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.5rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(250, 248, 244, 0.15);
+  border-bottom: 1px solid rgba(246, 241, 231, 0.15);
 }
 
 .footer__brand {
@@ -474,7 +474,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.15rem;
-  color: var(--sage);
+  color: var(--mauve);
   margin-top: 1.75rem;
 }
 
@@ -494,5 +494,5 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   padding-top: 2rem;
   font-size: 0.8rem;
   letter-spacing: 0.04em;
-  color: rgba(250, 248, 244, 0.6);
+  color: rgba(246, 241, 231, 0.6);
 }

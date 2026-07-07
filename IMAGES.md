@@ -19,10 +19,16 @@ toucher.
 
 ## Style de base (à coller au début de CHAQUE prompt)
 
+⚠️ Mis à jour le 07/07/2026 pour la palette prune & lin du site.
+
 > Editorial wedding photography, shot on medium format film, soft natural
-> light, muted palette of cream, ivory, sage green and blush pink, elegant
-> French countryside aesthetic, timeless and understated luxury, fine grain,
-> no text, no people's faces visible.
+> light, muted palette of ivory, linen, plum, mauve and blush pink with
+> natural green foliage, elegant French countryside aesthetic, timeless and
+> understated luxury, fine grain, no text, no people's faces visible.
+
+Les 14 images déjà générées (palette crème/sauge) restent en place : leur
+vert est celui des feuillages, il se marie bien avec le prune. Les
+remplacer progressivement si Justine veut une cohérence parfaite.
 
 ## Les images une par une
 

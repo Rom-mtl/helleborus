@@ -81,7 +81,7 @@ export default function Evenements() {
         </div>
       </section>
 
-      <section className="section section--forest center">
+      <section className="section section--plum center">
         <div className="container narrow">
           <span className="eyebrow">Votre événement</span>
           <p className="quote">

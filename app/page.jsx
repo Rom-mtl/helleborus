@@ -122,7 +122,7 @@ export default function Home() {
       </section>
 
       {/* ===== Le nom ===== */}
-      <section className="section section--forest center">
+      <section className="section section--plum center">
         <div className="container">
           <span className="eyebrow">Helléborus</span>
           <p className="quote">
