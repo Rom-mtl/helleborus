@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { site } from '../lib/site';
+import InstagramIcon from './InstagramIcon';
 
 export default function Footer() {
   return (
@@ -25,8 +26,18 @@ export default function Footer() {
         <div className="footer__block">
           <p className="footer__label">Suivre</p>
           <p>
-            <a href={site.contact.instagram} target="_blank" rel="noreferrer">
-              Instagram {site.contact.instagramHandle}
+            <a
+              href={site.contact.instagram}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+            >
+              <InstagramIcon size={16} />
+              {site.contact.instagramHandle}
             </a>
           </p>
         </div>

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { nav, site } from '../lib/site';
+import InstagramIcon from './InstagramIcon';
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -47,6 +48,16 @@ export default function Nav() {
               {item.label}
             </Link>
           ))}
+          <a
+            href={site.contact.instagram}
+            target="_blank"
+            rel="noreferrer"
+            className="nav__insta"
+            aria-label="Instagram Helléborus"
+          >
+            <InstagramIcon />
+            <span className="nav__insta-label">Instagram</span>
+          </a>
         </nav>
       </div>
 
@@ -98,6 +109,19 @@ export default function Nav() {
           color: var(--plum);
           border-bottom-color: var(--plum);
         }
+        .nav__links :global(a.nav__insta) {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+        .nav__insta-label {
+          display: none;
+          font-size: 0.72rem;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+        }
         .nav__burger {
           display: none;
           background: none;
@@ -139,6 +163,9 @@ export default function Nav() {
           .nav__links.is-open :global(a) {
             padding: 1.1rem var(--gutter);
             border-bottom: 1px solid var(--line);
+          }
+          .nav__links.is-open .nav__insta-label {
+            display: inline;
           }
         }
       `}</style>
