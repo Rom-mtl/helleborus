@@ -68,7 +68,7 @@ export default function Nav() {
           left: 0;
           right: 0;
           z-index: 50;
-          padding-block: 1.1rem;
+          padding-block: 1rem;
           color: #fff;
           transition: background 0.35s ease, color 0.35s ease,
             box-shadow 0.35s ease;
@@ -87,6 +87,7 @@ export default function Nav() {
           font-family: var(--font-display);
           font-size: 1.5rem;
           letter-spacing: 0.08em;
+          line-height: 1;
         }
         .nav__links {
           display: flex;
