@@ -183,7 +183,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(rgba(32, 22, 30, 0.25), rgba(32, 22, 30, 0.45));
+  background: linear-gradient(rgba(32, 22, 30, 0.35), rgba(32, 22, 30, 0.55));
 }
 
 .hero__inner {
@@ -191,23 +191,29 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   max-width: 900px;
 }
 
-.hero .eyebrow { color: rgba(255, 255, 255, 0.85); }
+.hero .eyebrow { color: #fff; }
+
+.hero .eyebrow,
+.hero h1,
+.hero p {
+  text-shadow: 0 1px 24px rgba(20, 12, 18, 0.55);
+}
 
 .hero h1 {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
 }
 
 .hero p {
   margin-top: 1.5rem;
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
-  font-weight: 300;
-  letter-spacing: 0.06em;
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
 }
 
 .hero .btn {
   margin-top: 2.5rem;
-  border-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.95);
 }
 
 .hero .btn:hover {
