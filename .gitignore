@@ -1,0 +1,11 @@
+# dépendances
+node_modules/
+
+# build
+.next/
+out/
+
+# divers
+.DS_Store
+npm-debug.log*
+*.log

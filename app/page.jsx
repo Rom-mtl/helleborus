@@ -1,0 +1,151 @@
+import Link from 'next/link';
+import { site } from '../lib/site';
+
+export const metadata = {
+  title: `${site.name} — Fleuriste événementiel, mariages & réceptions`,
+  description:
+    'Décors floraux sur mesure pour mariages et événements : bouquets, arches, scénographies. Une signature florale poétique et intemporelle.',
+};
+
+export default function Home() {
+  return (
+    <>
+      {/* ===== Hero ===== */}
+      <section className="hero">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="hero__img"
+          src="/images/hero.jpg"
+          alt="Scénographie florale de mariage signée Helléborus"
+        />
+        <div className="hero__inner">
+          <span className="eyebrow">Fleuriste événementiel</span>
+          <h1>Helléborus</h1>
+          <p>Des fleurs qui racontent votre histoire — mariages, réceptions
+            &amp; événements d&apos;exception</p>
+          <Link href="/contact/" className="btn">
+            Demander un devis
+          </Link>
+        </div>
+      </section>
+
+      {/* ===== Philosophie ===== */}
+      <section className="section center">
+        <div className="container narrow">
+          <span className="eyebrow">La maison</span>
+          <h2>Une signature florale poétique&nbsp;et&nbsp;intemporelle</h2>
+          <hr className="hr-leaf" />
+          <p className="lead">
+            Chaque événement est unique. Nous imaginons des décors floraux
+            sur mesure, composés de fleurs de saison, pour transformer vos
+            plus beaux moments en souvenirs impérissables.
+          </p>
+          <p style={{ marginTop: '1.5rem' }}>
+            <Link href="/a-propos/" className="link">
+              Découvrir la maison
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* ===== Prestations ===== */}
+      <section className="section section--soft">
+        <div className="container">
+          <div className="center" style={{ marginBottom: '3.5rem' }}>
+            <span className="eyebrow">Savoir-faire</span>
+            <h2>Nos prestations</h2>
+          </div>
+
+          <div className="grid-3">
+            <article className="card">
+              <Link href="/mariages/">
+                <div className="card__imgwrap">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/prestation-mariage.jpg"
+                    alt="Décor floral de cérémonie de mariage"
+                  />
+                </div>
+              </Link>
+              <h3>Mariages</h3>
+              <p>
+                Bouquet de mariée, arche de cérémonie, centres de table :
+                une création florale unique, à votre image.
+              </p>
+              <Link href="/mariages/" className="link">
+                Entrez
+              </Link>
+            </article>
+
+            <article className="card">
+              <Link href="/evenements/">
+                <div className="card__imgwrap">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/prestation-evenement.jpg"
+                    alt="Décoration florale de réception"
+                  />
+                </div>
+              </Link>
+              <h3>Événements</h3>
+              <p>
+                Réceptions privées, dîners, événements d&apos;entreprise :
+                des décors élégants et contemporains.
+              </p>
+              <Link href="/evenements/" className="link">
+                Entrez
+              </Link>
+            </article>
+
+            <article className="card">
+              <Link href="/galerie/">
+                <div className="card__imgwrap">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/prestation-galerie.jpg"
+                    alt="Composition florale — galerie Helléborus"
+                  />
+                </div>
+              </Link>
+              <h3>Galerie</h3>
+              <p>
+                Un aperçu de nos réalisations : ambiances, matières et
+                palettes qui inspirent nos créations.
+              </p>
+              <Link href="/galerie/" className="link">
+                Entrez
+              </Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Le nom ===== */}
+      <section className="section section--forest center">
+        <div className="container">
+          <span className="eyebrow">Helléborus</span>
+          <p className="quote">
+            «&nbsp;L&apos;hellébore, la rose de Noël, est la fleur qui ose
+            fleurir en plein hiver. Comme elle, nous croyons que la beauté
+            trouve toujours son chemin.&nbsp;»
+          </p>
+        </div>
+      </section>
+
+      {/* ===== CTA ===== */}
+      <section className="section center">
+        <div className="container narrow">
+          <span className="eyebrow">Votre projet</span>
+          <h2>Parlons de votre événement</h2>
+          <p style={{ margin: '1.5rem 0 2.5rem' }}>
+            Basés à {site.area.base}, nous intervenons dans toute la région
+            — et au-delà pour les projets qui nous font rêver.
+          </p>
+          <Link href="/contact/" className="btn btn--solid">
+            Prendre contact
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}

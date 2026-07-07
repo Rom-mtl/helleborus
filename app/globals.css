@@ -1,0 +1,481 @@
+/* ============================================================
+   HELLÉBORUS — design system
+   Palette inspirée de l'hellébore (rose de Noël) :
+   blancs chauds, verts profonds, rose poudré discret.
+   ============================================================ */
+
+:root {
+  /* Couleurs */
+  --paper: #faf8f4;      /* fond principal, blanc cassé chaud */
+  --paper-soft: #f3efe7; /* fond de section alternée */
+  --ink: #23271f;        /* texte, presque noir teinté vert */
+  --ink-soft: #5c6153;   /* texte secondaire */
+  --forest: #3a4634;     /* vert hellébore profond — accents */
+  --sage: #8a9480;       /* vert sauge — détails */
+  --blush: #e9dcd3;      /* rose poudré — touches rares */
+  --line: #e2dccf;       /* bordures fines */
+
+  /* Typo (variables injectées par next/font dans layout.jsx) */
+  --font-display: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-body: var(--font-jost), 'Jost', 'Helvetica Neue', sans-serif;
+
+  /* Rythme */
+  --section: clamp(4rem, 10vw, 8rem);
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --max: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Typographie ---------- */
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+
+h1 { font-size: clamp(2.6rem, 6vw, 4.5rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
+
+/* Petit label en capitales espacées, signature du style */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sage);
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* ---------- Structure ---------- */
+
+.container {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section);
+}
+
+.section--soft {
+  background: var(--paper-soft);
+}
+
+.section--forest {
+  background: var(--forest);
+  color: var(--paper);
+}
+
+.section--forest .eyebrow { color: var(--blush); }
+
+.center { text-align: center; }
+
+.narrow {
+  max-width: 680px;
+  margin-inline: auto;
+}
+
+/* ---------- Boutons ---------- */
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border: 1px solid currentColor;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+}
+
+.btn:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.section--forest .btn:hover {
+  background: var(--paper);
+  color: var(--forest);
+  border-color: var(--paper);
+}
+
+.btn--solid {
+  background: var(--forest);
+  color: var(--paper);
+  border-color: var(--forest);
+}
+
+.btn--solid:hover {
+  background: transparent;
+  color: var(--forest);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  min-height: 92svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  isolation: isolate;
+}
+
+.hero__img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(rgba(20, 24, 18, 0.25), rgba(20, 24, 18, 0.45));
+}
+
+.hero__inner {
+  padding: var(--gutter);
+  max-width: 900px;
+}
+
+.hero .eyebrow { color: rgba(255, 255, 255, 0.85); }
+
+.hero h1 {
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.hero p {
+  margin-top: 1.5rem;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+.hero .btn {
+  margin-top: 2.5rem;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .btn:hover {
+  background: #fff;
+  color: var(--ink);
+  border-color: #fff;
+}
+
+/* Hero réduit pour pages intérieures */
+.hero--page {
+  min-height: 55svh;
+}
+
+/* ---------- Grilles ---------- */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+/* ---------- Cartes prestation ---------- */
+
+.card {
+  text-align: center;
+}
+
+.card__imgwrap {
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  margin-bottom: 1.75rem;
+}
+
+.card__imgwrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .card__imgwrap img {
+  transform: scale(1.04);
+}
+
+.card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  max-width: 34ch;
+  margin-inline: auto;
+}
+
+.card .link {
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+/* Lien souligné discret */
+.link {
+  font-size: 0.78rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--sage);
+  padding-bottom: 0.35rem;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--forest);
+  border-color: var(--forest);
+}
+
+/* ---------- Galerie ---------- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.gallery figure {
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery figure:hover img {
+  transform: scale(1.04);
+}
+
+/* ---------- Listes de déroulé (process) ---------- */
+
+.steps {
+  counter-reset: step;
+  display: grid;
+  gap: 2.5rem;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.step {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+
+.step::before {
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--sage);
+}
+
+.step h3 { margin-bottom: 0.5rem; }
+.step p { color: var(--ink-soft); }
+
+/* ---------- Formulaire ---------- */
+
+.form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  padding: 0.65rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink);
+  border-radius: 0;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: none;
+  border-bottom-color: var(--forest);
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ---------- Divers ---------- */
+
+.quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-style: italic;
+  font-weight: 300;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.hr-leaf {
+  border: none;
+  width: 48px;
+  height: 1px;
+  background: var(--sage);
+  margin: 2.5rem auto;
+}
+
+.meta-list {
+  display: grid;
+  gap: 1.25rem;
+  font-size: 0.98rem;
+}
+
+.meta-list strong {
+  display: block;
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 0.2rem;
+}
+
+.prose h2, .prose h3 { margin: 2.5rem 0 1rem; }
+.prose p { margin-bottom: 1.25rem; }
+.prose ul { margin: 0 0 1.25rem 1.25rem; }
+
+/* ---------- Footer ---------- */
+
+.footer {
+  background: var(--forest);
+  color: rgba(250, 248, 244, 0.85);
+  padding-block: 4rem 2rem;
+  font-size: 0.95rem;
+}
+
+.footer a:hover { color: #fff; }
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(250, 248, 244, 0.15);
+}
+
+.footer__brand {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.footer__tag {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+}
+
+.footer__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--blush);
+  margin-bottom: 0.75rem;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: rgba(250, 248, 244, 0.6);
+}
