@@ -31,14 +31,20 @@ export default function APropos() {
             <h2>{site.contact.person}</h2>
             <hr className="hr-leaf" style={{ marginInline: 0 }} />
             <p style={{ marginBottom: '1.25rem' }}>
-              [À REMPLACER : 2-3 paragraphes sur son parcours. Exemples de
-              questions à lui poser : comment est-elle devenue fleuriste ?
-              Qu&apos;est-ce qui l&apos;anime dans l&apos;événementiel ?
-              Une anecdote fondatrice ?]
+              Fleuriste depuis plus de quinze ans, Justine a affûté son
+              regard au sein de belles maisons, à Lyon puis à
+              Aix-en-Provence. De ces années d&apos;atelier, elle garde une
+              exigence — celle du geste juste — et l&apos;envie, mûrie au
+              fil des saisons, de créer sous son propre nom.
             </p>
             <p>
-              [À REMPLACER : sa vision du métier, son style — champêtre,
-              minimaliste, opulent ? — et ce qui la distingue.]
+              L&apos;événementiel s&apos;est imposé comme une évidence :
+              un mariage, une réception, c&apos;est un décor entier à
+              imaginer, une histoire à raconter en fleurs. Ce qui
+              l&apos;anime par-dessus tout, c&apos;est la création —
+              proposer, oser, surprendre — et transformer les envies de
+              ses clients en quelque chose qu&apos;ils n&apos;auraient pas
+              su rêver eux-mêmes.
             </p>
           </div>
         </div>
