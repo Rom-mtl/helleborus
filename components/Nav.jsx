@@ -70,12 +70,14 @@ export default function Nav() {
           z-index: 50;
           padding-block: 1rem;
           color: #fff;
+          text-shadow: 0 1px 18px rgba(20, 12, 18, 0.55);
           transition: background 0.35s ease, color 0.35s ease,
             box-shadow 0.35s ease;
         }
         .nav--solid {
           background: var(--paper);
           color: var(--ink);
+          text-shadow: none;
           box-shadow: 0 1px 0 var(--line);
         }
         .nav__inner {
@@ -96,6 +98,7 @@ export default function Nav() {
         }
         .nav__links :global(a) {
           font-size: 0.72rem;
+          font-weight: 400;
           letter-spacing: 0.22em;
           text-transform: uppercase;
           padding-bottom: 0.3rem;
@@ -141,7 +144,11 @@ export default function Nav() {
           right: 4px;
           height: 1px;
           background: currentColor;
+          box-shadow: 0 1px 10px rgba(20, 12, 18, 0.45);
           transition: transform 0.3s ease, top 0.3s ease;
+        }
+        .nav--solid .nav__burger span {
+          box-shadow: none;
         }
         .nav__burger span:nth-child(1) { top: 8px; }
         .nav__burger span:nth-child(2) { top: 16px; }
