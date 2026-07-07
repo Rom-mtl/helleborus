@@ -134,9 +134,9 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 }
 
 .btn:hover {
-  background: var(--ink);
+  background: var(--plum);
   color: var(--paper);
-  border-color: var(--ink);
+  border-color: var(--plum);
 }
 
 .section--plum .btn:hover {
@@ -211,9 +211,9 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 }
 
 .hero .btn:hover {
-  background: #fff;
-  color: var(--ink);
-  border-color: #fff;
+  background: var(--paper);
+  color: var(--plum);
+  border-color: var(--paper);
 }
 
 /* Hero réduit pour pages intérieures */
