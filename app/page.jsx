@@ -40,6 +40,7 @@ export default function Home() {
             sur mesure, composés de fleurs de saison, pour transformer vos
             plus beaux moments en souvenirs impérissables.
           </p>
+          <p className="signature">Justine Lemoine, fondatrice</p>
           <p style={{ marginTop: '1.5rem' }}>
             <Link href="/a-propos/" className="link">
               Découvrir la maison

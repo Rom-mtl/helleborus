@@ -45,6 +45,7 @@ const jsonLd = {
   email: site.contact.email,
   telephone: site.contact.phone,
   areaServed: site.area.description,
+  founder: { '@type': 'Person', name: site.contact.person },
   sameAs: [site.contact.instagram],
 };
 

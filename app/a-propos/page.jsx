@@ -5,7 +5,7 @@ import { site } from '../../lib/site';
 export const metadata = {
   title: 'À propos',
   description:
-    "L'histoire d'Helléborus : une fleuriste passionnée, une signature florale poétique inspirée de la rose de Noël.",
+    "Justine Lemoine, fondatrice d'Helléborus : une fleuriste passionnée, une signature florale poétique inspirée de la rose de Noël.",
 };
 
 export default function APropos() {

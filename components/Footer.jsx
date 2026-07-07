@@ -7,6 +7,7 @@ export default function Footer() {
       <div className="container footer__grid">
         <div>
           <p className="footer__brand">Helléborus</p>
+          <p className="footer__person">{site.contact.person}</p>
           <p className="footer__tag">{site.tagline}</p>
         </div>
 
