@@ -129,7 +129,8 @@ export default function Mariages() {
         <div className="container narrow">
           <span className="eyebrow">Votre mariage</span>
           <p className="quote">
-            Chaque histoire d&apos;amour mérite son propre jardin.
+            «&nbsp;Les fleurs racontent votre histoire, nous en écrivons
+            la poésie.&nbsp;»
           </p>
           <p style={{ marginTop: '2.5rem' }}>
             <Link href="/contact/" className="btn">

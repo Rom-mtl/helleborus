@@ -5,15 +5,19 @@
    ============================================================ */
 
 :root {
-  /* Couleurs */
-  --paper: #f6f1e7;      /* fond principal, lin clair */
-  --paper-soft: #ece4d4; /* fond de section alternée, lin soutenu */
+  /* Couleurs — charte Helleborus (brand board 07/2026) */
+  --paper: #f3ede2;      /* champagne — fond principal */
+  --paper-soft: #e7e3d9; /* lin — sections alternées */
   --ink: #2a2026;        /* texte, presque noir teinté prune */
   --ink-soft: #5f525b;   /* texte secondaire, gris prune */
-  --plum: #4e2a3f;       /* prune profond — accents */
-  --mauve: #96788b;      /* mauve grisé — détails */
-  --blush: #e8d9d6;      /* rosé pâle — touches rares */
-  --line: #e0d6c4;       /* bordures fines, lin ombré */
+  --plum: #4a1e3d;       /* prune (charte) — accents forts */
+  --mauve: #8a6273;      /* rose poudré profond — labels lisibles */
+  --rose: #c89aaa;       /* rose poudré (charte) — touches */
+  --sage: #a7b09a;       /* sauge (charte) — touches végétales */
+  --blush: #e8d9d6;      /* rosé pâle — texte doux sur prune */
+  --gold: #d9a341;       /* moutarde (charte) — réservé, non utilisé */
+  --coral: #e68a7b;      /* corail (charte) — réservé, non utilisé */
+  --line: #d9d2c2;       /* bordures fines */
 
   /* Typo (variables injectées par next/font dans layout.jsx) */
   --font-display: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
@@ -412,7 +416,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   border: none;
   width: 48px;
   height: 1px;
-  background: var(--mauve);
+  background: var(--sage);
   margin: 2.5rem auto;
 }
 
@@ -440,7 +444,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 
 .footer {
   background: var(--plum);
-  color: rgba(246, 241, 231, 0.85);
+  color: rgba(243, 237, 226, 0.85);
   padding-block: 4rem 2rem;
   font-size: 0.95rem;
 }
@@ -452,7 +456,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.5rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(246, 241, 231, 0.15);
+  border-bottom: 1px solid rgba(243, 237, 226, 0.15);
 }
 
 .footer__brand {
@@ -500,5 +504,5 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   padding-top: 2rem;
   font-size: 0.8rem;
   letter-spacing: 0.04em;
-  color: rgba(246, 241, 231, 0.6);
+  color: rgba(243, 237, 226, 0.6);
 }

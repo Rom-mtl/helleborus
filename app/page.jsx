@@ -19,10 +19,9 @@ export default function Home() {
           alt="Scénographie florale de mariage signée Helleborus"
         />
         <div className="hero__inner">
-          <span className="eyebrow">Fleuriste événementiel</span>
+          <span className="eyebrow">Créations florales &amp; scénographie d&apos;événements</span>
           <h1>Helleborus</h1>
-          <p>Des fleurs qui racontent votre histoire — mariages, réceptions
-            &amp; événements d&apos;exception</p>
+          <p>L&apos;art floral des instants précieux</p>
           <Link href="/contact/" className="btn">
             Demander un devis
           </Link>
