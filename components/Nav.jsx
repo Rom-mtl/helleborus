@@ -86,18 +86,8 @@ export default function Nav() {
           align-items: center;
           justify-content: space-between;
         }
-        .nav__brand {
-          display: block;
-          line-height: 0;
-        }
-        .nav__brand :global(img) {
-          height: 44px;
-          width: auto;
-          transition: transform 0.3s ease;
-        }
-        .nav__brand:hover :global(img) {
-          transform: scale(1.05);
-        }
+        /* Styles du logo (.nav__brand img) : dans globals.css —
+           styled-jsx ne scope pas les enfants du composant Link */
         .nav__links {
           display: flex;
           gap: 2.2rem;
