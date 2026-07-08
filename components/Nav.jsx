@@ -24,8 +24,9 @@ export default function Nav() {
   return (
     <header className={`nav ${scrolled || open ? 'nav--solid' : ''}`}>
       <div className="nav__inner container">
-        <Link href="/" className="nav__brand">
-          {site.name}
+        <Link href="/" className="nav__brand" aria-label={`${site.name} — accueil`}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logo.png" alt="" />
         </Link>
 
         <button
@@ -68,7 +69,7 @@ export default function Nav() {
           left: 0;
           right: 0;
           z-index: 50;
-          padding-block: 1rem;
+          padding-block: 0.4rem;
           color: #fff;
           text-shadow: 0 1px 18px rgba(20, 12, 18, 0.55);
           transition: background 0.35s ease, color 0.35s ease,
@@ -86,10 +87,16 @@ export default function Nav() {
           justify-content: space-between;
         }
         .nav__brand {
-          font-family: var(--font-display);
-          font-size: 1.5rem;
-          letter-spacing: 0.08em;
-          line-height: 1;
+          display: block;
+          line-height: 0;
+        }
+        .nav__brand :global(img) {
+          height: 44px;
+          width: auto;
+          transition: transform 0.3s ease;
+        }
+        .nav__brand:hover :global(img) {
+          transform: scale(1.05);
         }
         .nav__links {
           display: flex;

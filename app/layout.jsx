@@ -1,7 +1,6 @@
 import { Cormorant_Garamond, Jost } from 'next/font/google';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import PreFooter from '../components/PreFooter';
 import { site } from '../lib/site';
 import './globals.css';
 
@@ -63,7 +62,6 @@ export default function RootLayout({ children }) {
         />
         <Nav />
         <main>{children}</main>
-        <PreFooter />
         <Footer />
       </body>
     </html>

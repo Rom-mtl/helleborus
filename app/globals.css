@@ -479,25 +479,6 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 .prose p { margin-bottom: 1.25rem; }
 .prose ul { margin: 0 0 1.25rem 1.25rem; }
 
-/* ---------- Pré-footer (logo) ---------- */
-
-.prefooter {
-  background: var(--paper);
-  text-align: center;
-  padding-block: clamp(3rem, 6vw, 4.5rem);
-  border-top: 1px solid var(--line);
-}
-
-.prefooter img {
-  width: min(190px, 50vw);
-  margin-inline: auto;
-  transition: transform 0.4s ease;
-}
-
-.prefooter a:hover img {
-  transform: scale(1.03);
-}
-
 /* ---------- Footer ---------- */
 
 .footer {
