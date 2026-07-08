@@ -23,7 +23,7 @@ export default function APropos() {
         <div className="container grid-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/portrait.jpg"
+            src="/images/portrait.jpg" loading="lazy"
             alt={`${site.contact.person}, fondatrice de la Maison Helleborus`}
             style={{ aspectRatio: '3 / 4', objectFit: 'cover', width: '100%' }}
           />

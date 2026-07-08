@@ -3,9 +3,9 @@ import { site } from '../lib/site';
 import FlowerDivider from '../components/FlowerDivider';
 
 export const metadata = {
-  title: `${site.name} — Fleuriste événementiel, mariages & réceptions`,
+  title: `${site.name} — Fleuriste mariage & événements, Aix-en-Provence`,
   description:
-    'Décors floraux sur mesure pour mariages et événements : bouquets, arches, scénographies. Une signature florale poétique et intemporelle.',
+    "Fleuriste événementiel à Aix-en-Provence : décors floraux sur mesure pour mariages et réceptions en Provence. Bouquets, arches, scénographies.",
 };
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <section className="hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          className="hero__img"
+          className="hero__img" fetchPriority="high"
           src="/images/hero.jpg"
           alt="Scénographie florale de mariage signée Maison Helleborus"
         />
@@ -72,7 +72,7 @@ export default function Home() {
                 <div className="card__imgwrap">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/prestation-mariage.jpg"
+                    src="/images/prestation-mariage.jpg" loading="lazy"
                     alt="Décor floral de cérémonie de mariage"
                   />
                 </div>
@@ -92,7 +92,7 @@ export default function Home() {
                 <div className="card__imgwrap">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/prestation-evenement.jpg"
+                    src="/images/prestation-evenement.jpg" loading="lazy"
                     alt="Décoration florale de réception"
                   />
                 </div>
@@ -112,7 +112,7 @@ export default function Home() {
                 <div className="card__imgwrap">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/prestation-galerie.jpg"
+                    src="/images/prestation-galerie.jpg" loading="lazy"
                     alt="Composition florale — galerie Helleborus"
                   />
                 </div>

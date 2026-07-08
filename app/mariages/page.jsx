@@ -3,9 +3,9 @@ import PageHero from '../../components/PageHero';
 import FlowerDivider from '../../components/FlowerDivider';
 
 export const metadata = {
-  title: 'Mariages',
+  title: 'Fleuriste mariage — Aix-en-Provence & Provence',
   description:
-    'Fleuriste mariage : bouquet de mariée, arche de cérémonie, centres de table, scénographie florale complète. Création sur mesure.',
+    'Fleuriste mariage à Aix-en-Provence : bouquet de mariée, arche de cérémonie, centres de table, scénographie florale complète en Provence.',
 };
 
 export default function Mariages() {
@@ -42,7 +42,7 @@ export default function Mariages() {
               <div className="card__imgwrap">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/mariage-bouquet.jpg"
+                  src="/images/mariage-bouquet.jpg" loading="lazy"
                   alt="Bouquet de mariée"
                 />
               </div>
@@ -56,7 +56,7 @@ export default function Mariages() {
               <div className="card__imgwrap">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/mariage-ceremonie.jpg"
+                  src="/images/mariage-ceremonie.jpg" loading="lazy"
                   alt="Arche de cérémonie fleurie"
                 />
               </div>
@@ -70,7 +70,7 @@ export default function Mariages() {
               <div className="card__imgwrap">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/mariage-reception.jpg"
+                  src="/images/mariage-reception.jpg" loading="lazy"
                   alt="Table de réception fleurie"
                 />
               </div>

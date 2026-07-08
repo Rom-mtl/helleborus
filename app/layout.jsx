@@ -18,12 +18,19 @@ const jost = Jost({
   variable: '--font-jost',
 });
 
+// Couleur de la barre du navigateur mobile
+export const viewport = {
+  themeColor: '#4a1e3d',
+};
+
 export const metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: `${site.name} — Fleuriste mariage & événements, Aix-en-Provence`,
     template: `%s — ${site.name}`,
   },
+  // URL canonique : se résout automatiquement page par page
+  alternates: { canonical: './' },
   description:
     "La Maison Helleborus crée des décors floraux sur mesure pour mariages, réceptions privées et événements : bouquets, arches, scénographies. Basée à " +
     site.area.base +
@@ -48,6 +55,12 @@ const jsonLd = {
   email: site.contact.email,
   telephone: site.contact.phone,
   areaServed: site.area.description,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: site.area.base,
+    addressRegion: site.area.region,
+    addressCountry: 'FR',
+  },
   founder: { '@type': 'Person', name: site.contact.person },
   sameAs: [site.contact.instagram],
 };

@@ -3,9 +3,9 @@ import PageHero from '../../components/PageHero';
 import FlowerDivider from '../../components/FlowerDivider';
 
 export const metadata = {
-  title: 'Événements',
+  title: 'Décoration florale événements — Aix-en-Provence',
   description:
-    "Décoration florale d'événements privés et professionnels : réceptions, dîners, anniversaires, lancements, événements d'entreprise.",
+    "Décoration florale d'événements privés et professionnels à Aix-en-Provence et en Provence : réceptions, dîners, anniversaires, événements d'entreprise.",
 };
 
 export default function Evenements() {
@@ -35,7 +35,7 @@ export default function Evenements() {
         <div className="container grid-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/evenement-prive.jpg"
+            src="/images/evenement-prive.jpg" loading="lazy"
             alt="Table de fête fleurie pour une réception privée"
             style={{ aspectRatio: '4 / 5', objectFit: 'cover', width: '100%' }}
           />
@@ -75,7 +75,7 @@ export default function Evenements() {
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/evenement-corporate.jpg"
+            src="/images/evenement-corporate.jpg" loading="lazy"
             alt="Décor floral pour événement d'entreprise"
             style={{ aspectRatio: '4 / 5', objectFit: 'cover', width: '100%' }}
           />
