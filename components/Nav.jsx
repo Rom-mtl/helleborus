@@ -25,7 +25,7 @@ export default function Nav() {
     <header className={`nav ${scrolled || open ? 'nav--solid' : ''}`}>
       <div className="nav__inner container">
         <Link href="/" className="nav__brand">
-          Helleborus
+          {site.name}
         </Link>
 
         <button

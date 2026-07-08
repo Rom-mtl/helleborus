@@ -6,7 +6,7 @@ import { site } from '../../lib/site';
 export const metadata = {
   title: 'À propos',
   description:
-    "Justine Lemoine, fondatrice d'Helleborus : une fleuriste passionnée, une signature florale poétique inspirée de la rose de Noël.",
+    "Justine Lemoine, fondatrice de la Maison Helleborus : une fleuriste passionnée, une signature florale poétique inspirée de la rose de Noël.",
 };
 
 export default function APropos() {
@@ -24,7 +24,7 @@ export default function APropos() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/portrait.jpg"
-            alt={`${site.contact.person}, fondatrice d'Helleborus`}
+            alt={`${site.contact.person}, fondatrice de la Maison Helleborus`}
             style={{ aspectRatio: '3 / 4', objectFit: 'cover', width: '100%' }}
           />
           <div>

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__grid">
         <div>
-          <p className="footer__brand">Helleborus</p>
+          <p className="footer__brand">{site.name}</p>
           <p className="footer__person">{site.contact.person}</p>
           <p className="footer__tag">{site.tagline}</p>
         </div>
@@ -51,7 +51,7 @@ export default function Footer() {
       <div className="container footer__bottom">
         <Link href="/mentions-legales/">Mentions légales</Link>
         <span>
-          © {new Date().getFullYear()} Helleborus — Tous droits réservés
+          © {new Date().getFullYear()} {site.name} — Tous droits réservés
         </span>
       </div>
     </footer>

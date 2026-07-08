@@ -5,7 +5,7 @@ import { site } from '../../lib/site';
 export const metadata = {
   title: 'Contact & devis',
   description:
-    'Contactez Helleborus pour votre mariage ou votre événement : demande de devis, informations, disponibilités.',
+    'Contactez la Maison Helleborus pour votre mariage ou votre événement : demande de devis, informations, disponibilités.',
 };
 
 export default function Contact() {
@@ -15,7 +15,7 @@ export default function Contact() {
         eyebrow="Votre projet"
         title="Contact"
         image="/images/contact-hero.jpg"
-        alt="Atelier Helleborus — préparation d'une composition"
+        alt="Atelier de la Maison Helleborus — préparation d'une composition"
       />
 
       <section className="section">

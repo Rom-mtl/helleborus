@@ -25,13 +25,14 @@ export const metadata = {
     template: `%s — ${site.name}`,
   },
   description:
-    "Helleborus crée des décors floraux sur mesure pour mariages, réceptions privées et événements : bouquets, arches, scénographies. Basé à " +
+    "La Maison Helleborus crée des décors floraux sur mesure pour mariages, réceptions privées et événements : bouquets, arches, scénographies. Basée à " +
     site.area.base +
     ', intervient dans toute la région et au-delà.',
   openGraph: {
     siteName: site.name,
     locale: 'fr_FR',
     type: 'website',
+    images: ['/images/og.jpg'],
   },
 };
 
@@ -40,6 +41,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Florist',
   name: site.name,
+  alternateName: 'Helleborus',
+  logo: `${site.url}/images/logo.png`,
   description: site.tagline,
   url: site.url,
   email: site.contact.email,

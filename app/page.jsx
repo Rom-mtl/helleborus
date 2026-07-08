@@ -17,11 +17,11 @@ export default function Home() {
         <img
           className="hero__img"
           src="/images/hero.jpg"
-          alt="Scénographie florale de mariage signée Helleborus"
+          alt="Scénographie florale de mariage signée Maison Helleborus"
         />
         <div className="hero__inner">
           <span className="eyebrow">Créations florales &amp; scénographie d&apos;événements</span>
-          <h1>Helleborus</h1>
+          <h1>Maison Helleborus</h1>
           <p>L&apos;art floral des instants précieux</p>
           <Link href="/contact/" className="btn">
             Demander un devis
@@ -32,7 +32,16 @@ export default function Home() {
       {/* ===== Philosophie ===== */}
       <section className="section center">
         <div className="container narrow">
-          <span className="eyebrow">La maison</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo.png"
+            alt="Maison Helleborus — créations florales et scénographie d'événements"
+            style={{
+              width: 'min(230px, 60vw)',
+              marginInline: 'auto',
+              marginBottom: '2rem',
+            }}
+          />
           <h2>Une signature florale poétique&nbsp;et&nbsp;intemporelle</h2>
           <FlowerDivider />
           <p className="lead">
@@ -124,7 +133,7 @@ export default function Home() {
       {/* ===== Le nom ===== */}
       <section className="section section--plum center">
         <div className="container">
-          <span className="eyebrow">Helleborus</span>
+          <span className="eyebrow">Maison Helleborus</span>
           <p className="quote">
             «&nbsp;L&apos;hellébore, la rose de Noël, est la fleur qui ose
             fleurir en plein hiver. Comme elle, nous croyons que la beauté
