@@ -56,6 +56,15 @@ export default function MentionsLegales() {
             préalable est interdite.
           </p>
 
+          <h2>Crédits visuels</h2>
+          <p>
+            Dans l&apos;attente des photographies de nos réalisations,
+            certaines images d&apos;illustration de ce site (ambiances,
+            compositions) sont des visuels générés par intelligence
+            artificielle. Ils illustrent l&apos;univers de la maison et ne
+            représentent pas des réalisations existantes.
+          </p>
+
           <h2>Données personnelles</h2>
           <p>
             Les informations transmises via le formulaire de contact

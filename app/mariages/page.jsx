@@ -34,8 +34,8 @@ export default function Mariages() {
       <section className="section section--soft">
         <div className="container">
           <div className="center" style={{ marginBottom: '3.5rem' }}>
-            <span className="eyebrow">Ce que nous créons</span>
-            <h2>Nos créations mariage</h2>
+            <span className="eyebrow">Ce que nous proposons</span>
+            <h2>L&apos;univers mariage</h2>
           </div>
           <div className="grid-3">
             <div className="card">
