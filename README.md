@@ -56,14 +56,16 @@ la liste en haut de `app/galerie/page.jsx`.
   (les 4 A pointent l'apex `maison-helleborus.fr` vers GitHub Pages,
   qui redirigera vers `www`)
 
-### 3. Formulaire de contact
+### 3. Formulaire de contact (FormSubmit — aucun compte requis)
 
-- [ ] Créer un compte gratuit sur [formspree.io](https://formspree.io)
-      (50 envois/mois), créer un formulaire pointant vers l'email de la
-      fleuriste
-- [ ] Remplacer `FORM_ID` dans `app/contact/page.jsx`
-- Sans ça, le formulaire ne fonctionne pas ; les visiteurs ont quand même
-  l'email et le téléphone affichés à côté.
+- [ ] Une fois le site en ligne, faire **un envoi de test** depuis la
+      page contact
+- [ ] Ouvrir la boîte `contact.helleborus@gmail.com` : cliquer le lien
+      d'**activation** envoyé par FormSubmit (une seule fois)
+- [ ] Refaire un envoi de test pour vérifier la réception
+- Les demandes arrivent ensuite par email (mise en page tableau).
+  Anti-spam : captcha FormSubmit actif par défaut. Après envoi, le
+  visiteur est redirigé vers `/merci/`.
 
 ### 4. GitHub — repo : [Rom-mtl/helleborus](https://github.com/Rom-mtl/helleborus)
 

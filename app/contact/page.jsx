@@ -62,13 +62,25 @@ export default function Contact() {
           </div>
 
           {/* --- Formulaire ---
-              Formspree : créer un formulaire gratuit sur formspree.io
-              et remplacer FORM_ID ci-dessous (voir README, étape 3). --- */}
+              FormSubmit : les envois partent vers l'adresse ci-dessous.
+              Premier envoi = email d'activation à cliquer (voir README). --- */}
           <form
             className="form"
-            action="https://formspree.io/f/FORM_ID"
+            action={`https://formsubmit.co/${site.contact.email}`}
             method="POST"
           >
+            {/* Options FormSubmit */}
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nouvelle demande via maison-helleborus.fr"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value={`${site.url}/merci/`}
+            />
             <div className="form__row">
               <div>
                 <label htmlFor="name">Nom *</label>
