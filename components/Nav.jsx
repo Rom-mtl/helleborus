@@ -26,7 +26,7 @@ export default function Nav() {
       <div className="nav__inner container">
         <Link href="/" className="nav__brand" aria-label={`${site.name} — accueil`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" alt="" />
+          <img src="/images/logo-rond.png" alt="" />
         </Link>
 
         <button
