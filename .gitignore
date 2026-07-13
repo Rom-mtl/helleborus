@@ -5,6 +5,9 @@ node_modules/
 .next/
 out/
 
+# images brutes régénérées (avant optimisation)
+generated/
+
 # divers
 .DS_Store
 npm-debug.log*

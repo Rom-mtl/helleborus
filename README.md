@@ -30,6 +30,21 @@ la liste en haut de `app/galerie/page.jsx`.
 
 ## Checklist de mise en ligne
 
+### 0. Régénérer les images sans watermark visible
+
+Les images générées via l'app Gemini portent le logo « sparkle » ;
+celles générées via l'**API** n'en ont pas (SynthID invisible conservé).
+
+```bash
+# clé gratuite : https://aistudio.google.com/apikey
+export GEMINI_API_KEY="..."
+node scripts/generate-images.mjs          # tout (~3 min, rate limit)
+node scripts/generate-images.mjs hero.jpg # une seule
+```
+
+Les PNG bruts sortent dans `generated/` (non versionné) → demander à
+Claude de les optimiser et de les placer dans `public/images/`.
+
 ### 1. Contenu — à faire AVANT publication
 
 - [ ] Remplacer tous les `[À REMPLACER]` de `lib/site.js` (coordonnées,
