@@ -27,10 +27,17 @@ export default function Home() {
             Demander un devis
           </Link>
         </div>
+        <a
+          href="#la-maison"
+          className="hero__scroll"
+          aria-label="Découvrir la suite"
+        >
+          <span />
+        </a>
       </section>
 
       {/* ===== Philosophie ===== */}
-      <section className="section center">
+      <section className="section center" id="la-maison">
         <div className="container narrow">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

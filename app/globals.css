@@ -253,6 +253,37 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   border-color: var(--paper);
 }
 
+/* Indicateur de scroll : fin trait qui coule vers le bas */
+.hero__scroll {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 56px;
+  overflow: hidden;
+}
+
+.hero__scroll span {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  animation: scroll-hint 2.4s ease-in-out infinite;
+}
+
+@keyframes scroll-hint {
+  0% { transform: translateY(-100%); }
+  55% { transform: translateY(0); }
+  100% { transform: translateY(100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__scroll span {
+    animation: none;
+  }
+}
+
 /* Hero réduit pour pages intérieures */
 .hero--page {
   min-height: 55svh;
