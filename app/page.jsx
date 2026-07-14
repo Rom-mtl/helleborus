@@ -65,19 +65,15 @@ export default function Home() {
 
           <div
             className="grid-2"
-            style={{
-              marginTop: '3rem',
-              textAlign: 'left',
-              alignItems: 'start',
-            }}
+            style={{ marginTop: '3rem', alignItems: 'start' }}
           >
-            <p style={{ color: 'var(--ink-soft)', lineHeight: 1.8 }}>
+            <p className="lead">
               Parce que certains espaces méritent une identité florale
               durable, Maison Helleborus conçoit également des
               installations permanentes en fleurs et végétaux artificiels
               haut de gamme.
             </p>
-            <p style={{ color: 'var(--ink-soft)', lineHeight: 1.8 }}>
+            <p className="lead">
               Murs végétaux, plafonds fleuris, suspensions, compositions
               florales, décoration de vitrines ou aménagements
               d&apos;espaces professionnels&nbsp;: nous créons des décors
