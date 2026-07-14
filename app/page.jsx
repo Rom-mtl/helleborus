@@ -49,12 +49,26 @@ export default function Home() {
               marginBottom: '2rem',
             }}
           />
-          <h2>Une signature florale poétique&nbsp;et&nbsp;intemporelle</h2>
+          <h2>Scénographie florale pour mariages & événements</h2>
           <FlowerDivider />
           <p className="lead">
-            Chaque événement est unique. Nous imaginons des décors floraux
-            sur mesure, composés de fleurs de saison, pour transformer vos
-            plus beaux moments en souvenirs impérissables.
+            Les fleurs fraîches sont au coeur de notre savoir-faire. Nous créons
+            des scénographies florales sur mesure pour les mariages, les célébrations
+            privées et les événements professionnels, en imaginant des décors élégants,
+            naturels et intemporels qui racontent votre histoire.
+          </p>
+           <p className="lead">
+            Au-delà de l'évenement, nous fleurissons aussi les lieux de vie.
+          </p>
+          <p className="lead">
+            Parce que certains espaces méritent une identité florale durable, Maison Helleborus
+            conçoit également des installations permanentes en fleurs et végétaux artificiels
+            haut de game.
+          </p>
+          <p className="lead">
+            Murs végétaux, plafonds fleuris, suspensions, compositions florales, décoration de 
+            vitrines ou aménagements d'espaces professionnels : nous créons des décors sur mesure
+            pour les hôtels, restaurants, boutiques, bureaux, salles de sport et lieux de bien-être.
           </p>
           <p className="signature">Justine Lemoine, fondatrice</p>
           <p style={{ marginTop: '1.5rem' }}>
