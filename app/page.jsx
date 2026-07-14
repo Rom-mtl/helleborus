@@ -52,25 +52,43 @@ export default function Home() {
           <h2>Scénographie florale pour mariages & événements</h2>
           <FlowerDivider />
           <p className="lead">
-            Les fleurs fraîches sont au coeur de notre savoir-faire. Nous créons
-            des scénographies florales sur mesure pour les mariages, les célébrations
-            privées et les événements professionnels, en imaginant des décors élégants,
-            naturels et intemporels qui racontent votre histoire.
+            Les fleurs fraîches sont au cœur de notre savoir-faire — et
+            au-delà de l&apos;événement, nous fleurissons aussi les lieux
+            de vie.
           </p>
-           <p className="lead">
-            Au-delà de l'évenement, nous fleurissons aussi les lieux de vie.
+
+          <div className="grid-3" style={{ marginTop: '3.5rem', textAlign: 'center' }}>
+            <div className="card">
+              <h3>Fleurs fraîches</h3>
+              <p>
+                Des scénographies florales sur mesure pour les mariages,
+                les célébrations privées et les événements professionnels :
+                des décors élégants, naturels et intemporels qui racontent
+                votre histoire.
+              </p>
+            </div>
+            <div className="card">
+              <h3>Installations durables</h3>
+              <p>
+                Parce que certains espaces méritent une identité florale
+                permanente : murs végétaux, plafonds fleuris, suspensions
+                et compositions en fleurs et végétaux artificiels haut de
+                gamme.
+              </p>
+            </div>
+            <div className="card">
+              <h3>Lieux de vie</h3>
+              <p>
+                Hôtels, restaurants, boutiques, bureaux, salles de sport et
+                lieux de bien-être : des décors et vitrines sur mesure,
+                pensés pour durer au quotidien.
+              </p>
+            </div>
+          </div>
+
+          <p className="signature" style={{ marginTop: '3rem' }}>
+            Justine Lemoine, fondatrice
           </p>
-          <p className="lead">
-            Parce que certains espaces méritent une identité florale durable, Maison Helleborus
-            conçoit également des installations permanentes en fleurs et végétaux artificiels
-            haut de game.
-          </p>
-          <p className="lead">
-            Murs végétaux, plafonds fleuris, suspensions, compositions florales, décoration de 
-            vitrines ou aménagements d'espaces professionnels : nous créons des décors sur mesure
-            pour les hôtels, restaurants, boutiques, bureaux, salles de sport et lieux de bien-être.
-          </p>
-          <p className="signature">Justine Lemoine, fondatrice</p>
           <p style={{ marginTop: '1.5rem' }}>
             <Link href="/a-propos/" className="link">
               Découvrir la maison
