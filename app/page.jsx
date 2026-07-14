@@ -63,24 +63,19 @@ export default function Home() {
             de vie.
           </p>
 
-          <div
-            className="grid-2"
-            style={{ marginTop: '3rem', alignItems: 'start' }}
-          >
-            <p className="lead">
-              Parce que certains espaces méritent une identité florale
-              durable, Maison Helleborus conçoit également des
-              installations permanentes en fleurs et végétaux artificiels
-              haut de gamme.
-            </p>
-            <p className="lead">
-              Murs végétaux, plafonds fleuris, suspensions, compositions
-              florales, décoration de vitrines ou aménagements
-              d&apos;espaces professionnels&nbsp;: nous créons des décors
-              sur mesure pour les hôtels, restaurants, boutiques, bureaux,
-              salles de sport et lieux de bien-être.
-            </p>
-          </div>
+          <p className="lead" style={{ marginTop: '1.5rem' }}>
+            Parce que certains espaces méritent une identité florale
+            durable, Maison Helleborus conçoit également des
+            installations permanentes en fleurs et végétaux artificiels
+            haut de gamme.
+          </p>
+          <p className="lead" style={{ marginTop: '1.5rem' }}>
+            Murs végétaux, plafonds fleuris, suspensions, compositions
+            florales, décoration de vitrines ou aménagements
+            d&apos;espaces professionnels&nbsp;: nous créons des décors
+            sur mesure pour les hôtels, restaurants, boutiques, bureaux,
+            salles de sport et lieux de bien-être.
+          </p>
 
           <p className="signature" style={{ marginTop: '3rem' }}>
             Justine Lemoine, fondatrice
