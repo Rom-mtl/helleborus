@@ -6,7 +6,7 @@ import { site } from '../../lib/site';
 export const metadata = {
   title: 'À propos',
   description:
-    "Justine Lemoine, fondatrice de la Maison Helleborus : une fleuriste passionnée, une signature florale poétique inspirée de la rose de Noël.",
+    "Justine Lemoine, designer floral à Aix-en-Provence : scénographies florales sur mesure pour mariages et événements dans toute la région PACA.",
 };
 
 export default function APropos() {
@@ -32,26 +32,80 @@ export default function APropos() {
             <h2>{site.contact.person}</h2>
             <FlowerDivider align="left" />
             <p style={{ marginBottom: '1.25rem' }}>
-              Fleuriste depuis plus de quinze ans, j&apos;ai affûté mon
-              regard au sein de belles maisons, à Lyon puis à
-              Aix-en-Provence. De ces années d&apos;atelier, je garde une
-              exigence — celle du geste juste — et l&apos;envie, mûrie au
-              fil des saisons, de créer sous mon propre nom.
+              Designer floral installée à Aix-en-Provence, je crée des
+              scénographies florales sur mesure pour les mariages et les
+              événements privés dans toute la région PACA. Fleuriste
+              diplômée, je conçois des scénographies florales élégantes,
+              poétiques et raffinées, pensées pour sublimer chaque lieu et
+              raconter une histoire qui vous ressemble.
+            </p>
+            <p style={{ marginBottom: '1.25rem' }}>
+              Basée à Aix-en-Provence, je me déplace dans les
+              Bouches-du-Rhône, le Var, le Vaucluse, le Luberon, les
+              Alpilles, les Alpes-de-Haute-Provence, les Hautes-Alpes et
+              les Alpes-Maritimes, selon les projets. Mariages,
+              anniversaires, baby showers, gender reveals, soirées
+              privées, événements d&apos;entreprise, hôtels ou domaines de
+              réception : chaque création est entièrement personnalisée,
+              des premiers croquis jusqu&apos;à l&apos;installation le
+              jour J.
             </p>
             <p>
-              L&apos;événementiel s&apos;est imposé comme une évidence :
-              un mariage, une réception, c&apos;est un décor entier à
-              imaginer, une histoire à raconter en fleurs. Ce qui
-              m&apos;anime par-dessus tout, c&apos;est la création —
-              proposer, oser, surprendre — et transformer vos envies en
-              quelque chose que vous n&apos;auriez pas su rêver
-              vous-même.
+              Je réalise notamment les bouquets de mariée, arches
+              florales, centres de table, cérémonies religieuses ou
+              laïques, décors suspendus, compositions monumentales,
+              panneaux de bienvenue, scénographies complètes ainsi que des
+              créations végétales permanentes : murs végétaux, plafonds
+              végétalisés et décors en fleurs artificielles, séchées ou
+              stabilisées, sélectionnées avec le plus grand soin.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section section--soft center">
+      <section className="section section--soft">
+        <div className="container narrow">
+          <FlowerDivider />
+          <div className="prose" style={{ marginTop: '2.5rem' }}>
+            <p>
+              Je suis devenue fleuriste par passion du geste, des couleurs
+              et de la création. Après un parcours complet, de
+              l&apos;apprentissage aux réalisations les plus techniques,
+              j&apos;ai exercé aussi bien en boutique qu&apos;en
+              événementiel avant de choisir de me consacrer entièrement
+              aux projets qui me font vibrer : ceux qui célèbrent les
+              moments importants d&apos;une vie.
+            </p>
+            <p>
+              Chaque réception est une page blanche. J&apos;aime écouter,
+              comprendre vos envies, imaginer plusieurs pistes créatives
+              et trouver des solutions adaptées à votre lieu, à votre
+              budget et à vos rêves. Mon rôle n&apos;est pas seulement de
+              fleurir un événement, mais de créer une atmosphère, un décor
+              dont on se souvient longtemps après que les fleurs se sont
+              fanées.
+            </p>
+            <p>
+              Mon univers n&apos;a pas de style imposé. Romantique,
+              contemporain, méditerranéen, éditorial, naturel, luxuriant
+              ou minimaliste : je m&apos;adapte à chaque projet pour créer
+              une décoration qui ne ressemble qu&apos;à vous. Lorsque la
+              saison le permet, je privilégie les fleurs françaises et les
+              végétaux de qualité, avec la même exigence pour les
+              créations permanentes.
+            </p>
+            <p>
+              J&apos;aime les détails qui font toute la différence, les
+              compositions qui surprennent sans jamais en faire trop, les
+              décors qui révèlent un lieu plutôt que de le masquer. Car, à
+              mes yeux, les plus belles créations florales sont celles qui
+              semblent avoir toujours été à leur place.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section center">
         <div className="container narrow">
           <span className="eyebrow">Le nom</span>
           <h2>Pourquoi Helleborus&nbsp;?</h2>
@@ -67,7 +121,7 @@ export default function APropos() {
         </div>
       </section>
 
-      <section className="section center">
+      <section className="section section--soft center">
         <div className="container narrow">
           <span className="eyebrow">Engagements</span>
           <h2>Notre façon de travailler</h2>
