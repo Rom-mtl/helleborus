@@ -150,7 +150,7 @@ export default function Nav() {
         .nav__burger span:nth-child(1) { top: 8px; }
         .nav__burger span:nth-child(2) { top: 16px; }
 
-        @media (max-width: 820px) {
+        @media (max-width: 1080px) {
           .nav__burger { display: block; }
           .nav__links {
             display: none;

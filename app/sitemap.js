@@ -8,6 +8,7 @@ export default function sitemap() {
     'a-propos/',
     'mariages/',
     'evenements/',
+    'decors-permanents/',
     'galerie/',
     'contact/',
   ];

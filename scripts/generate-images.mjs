@@ -52,6 +52,11 @@ const IMAGES = [
   ['galerie/galerie-06.jpg', 'Detail of a boutonnière on a linen jacket, no face. Portrait aspect ratio 4:5.'],
   ['galerie/galerie-07.jpg', 'Candlelit head table with lush floral garland at night. Portrait aspect ratio 4:5.'],
   ['galerie/galerie-08.jpg', 'Macro detail of plum hellebore petals with morning dew. Portrait aspect ratio 4:5.'],
+  ['permanents-hero.jpg', 'Elegant hotel lobby with a lush permanent floral installation: a large flower wall in ivory, blush and plum tones with green foliage, refined contemporary interior, soft natural light, no people. Landscape aspect ratio 16:9.'],
+  ['permanent-mur.jpg', 'Floor-to-ceiling flower wall in a refined boutique interior, dense roses, hydrangeas and foliage in cream, blush and plum tones, artificial flowers of premium quality. Portrait aspect ratio 3:4.'],
+  ['permanent-plafond.jpg', 'Ceiling floral installation with hanging blooms and trailing greenery above elegant restaurant tables, warm ambient light, no people. Portrait aspect ratio 3:4.'],
+  ['permanent-vitrine.jpg', 'Chic boutique window display decorated with an artistic permanent floral arrangement, plum and ivory flowers, elegant French storefront. Portrait aspect ratio 3:4.'],
+  ['permanent-espace.jpg', 'Corner of a serene wellness space with a sculptural permanent floral arrangement in a large ceramic vase, plaster wall, soft daylight. Portrait aspect ratio 4:5.'],
 ];
 
 const only = process.argv[2];

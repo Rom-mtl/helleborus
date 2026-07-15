@@ -50,6 +50,11 @@ remplacer progressivement si Justine veut une cohérence parfaite.
 | `evenement-prive.jpg` | Événements | 960×1200 | Birthday dinner table in a private garden, generous floral centerpiece, champagne glasses, string lights softly out of focus. |
 | `evenement-corporate.jpg` | Événements | 960×1200 | Minimal and refined floral installation at a brand event: sculptural arrangement on a plinth in a bright modern space. |
 | `galerie/galerie-01.jpg` → `galerie-08.jpg` | Galerie | 960×1200 | Décliner 8 scènes différentes en gardant le style de base : arche, bouquet, centre de table, suspension, escalier fleuri, boutonnière, table d'honneur aux chandelles, détail d'hellébores. Varier les cadrages (large / serré) pour que la grille respire. |
+| `permanents-hero.jpg` | Décors permanents, bandeau | 1920×1080 | Elegant hotel lobby with a lush permanent floral installation: a large flower wall in ivory, blush and plum tones with green foliage, refined contemporary interior, soft natural light, no people. |
+| `permanent-mur.jpg` | Décors permanents, carte 1 | 900×1200 | Floor-to-ceiling flower wall in a refined boutique interior, dense roses, hydrangeas and foliage in cream, blush and plum tones, artificial flowers of premium quality. |
+| `permanent-plafond.jpg` | Décors permanents, carte 2 | 900×1200 | Ceiling floral installation with hanging blooms and trailing greenery above elegant restaurant tables, warm ambient light, no people. |
+| `permanent-vitrine.jpg` | Décors permanents, carte 3 | 900×1200 | Chic boutique window display decorated with an artistic permanent floral arrangement, plum and ivory flowers, elegant French storefront. |
+| `permanent-espace.jpg` | Décors permanents, section pros | 960×1200 | Corner of a serene wellness space with a sculptural permanent floral arrangement in a large ceramic vase, plaster wall, soft daylight. |
 
 ## Astuce cohérence
 
