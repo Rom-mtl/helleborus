@@ -24,7 +24,7 @@
   --font-body: var(--font-jost), 'Jost', 'Helvetica Neue', sans-serif;
 
   /* Rythme */
-  --section: clamp(4rem, 10vw, 8rem);
+  --section: clamp(2rem, 5vw, 4rem);
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --max: 1200px;
 }
