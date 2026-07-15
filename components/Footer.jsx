@@ -10,6 +10,11 @@ export default function Footer() {
           <p className="footer__brand">{site.name}</p>
           <p className="footer__person">{site.contact.person}</p>
           <p className="footer__tag">{site.tagline}</p>
+          <p className="footer__seo">
+            Designer floral &amp; fleuriste mariage à Aix-en-Provence —
+            scénographies florales pour mariages, événements et décors
+            permanents en Provence.
+          </p>
         </div>
 
         <div className="footer__block">

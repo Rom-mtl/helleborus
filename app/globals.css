@@ -566,6 +566,14 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   letter-spacing: 0.06em;
 }
 
+.footer__seo {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: rgba(243, 237, 226, 0.55);
+  max-width: 34ch;
+}
+
 /* Signature manuscrite discrète (accueil) */
 .signature {
   font-family: var(--font-display);
