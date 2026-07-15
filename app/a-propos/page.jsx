@@ -64,43 +64,50 @@ export default function APropos() {
       </section>
 
       <section className="section section--soft">
-        <div className="container narrow">
+        <div className="container">
           <FlowerDivider />
-          <div className="prose" style={{ marginTop: '2.5rem' }}>
-            <p>
-              Je suis devenue fleuriste par passion du geste, des couleurs
-              et de la création. Après un parcours complet, de
-              l&apos;apprentissage aux réalisations les plus techniques,
-              j&apos;ai exercé aussi bien en boutique qu&apos;en
-              événementiel avant de choisir de me consacrer entièrement
-              aux projets qui me font vibrer : ceux qui célèbrent les
-              moments importants d&apos;une vie.
-            </p>
-            <p>
-              Chaque réception est une page blanche. J&apos;aime écouter,
-              comprendre vos envies, imaginer plusieurs pistes créatives
-              et trouver des solutions adaptées à votre lieu, à votre
-              budget et à vos rêves. Mon rôle n&apos;est pas seulement de
-              fleurir un événement, mais de créer une atmosphère, un décor
-              dont on se souvient longtemps après que les fleurs se sont
-              fanées.
-            </p>
-            <p>
-              Mon univers n&apos;a pas de style imposé. Romantique,
-              contemporain, méditerranéen, éditorial, naturel, luxuriant
-              ou minimaliste : je m&apos;adapte à chaque projet pour créer
-              une décoration qui ne ressemble qu&apos;à vous. Lorsque la
-              saison le permet, je privilégie les fleurs françaises et les
-              végétaux de qualité, avec la même exigence pour les
-              créations permanentes.
-            </p>
-            <p>
-              J&apos;aime les détails qui font toute la différence, les
-              compositions qui surprennent sans jamais en faire trop, les
-              décors qui révèlent un lieu plutôt que de le masquer. Car, à
-              mes yeux, les plus belles créations florales sont celles qui
-              semblent avoir toujours été à leur place.
-            </p>
+          <div
+            className="grid-2"
+            style={{ marginTop: '2.5rem', alignItems: 'start' }}
+          >
+            <div className="prose">
+              <p>
+                Je suis devenue fleuriste par passion du geste, des
+                couleurs et de la création. Après un parcours complet, de
+                l&apos;apprentissage aux réalisations les plus techniques,
+                j&apos;ai exercé aussi bien en boutique qu&apos;en
+                événementiel avant de choisir de me consacrer entièrement
+                aux projets qui me font vibrer : ceux qui célèbrent les
+                moments importants d&apos;une vie.
+              </p>
+              <p>
+                Chaque réception est une page blanche. J&apos;aime
+                écouter, comprendre vos envies, imaginer plusieurs pistes
+                créatives et trouver des solutions adaptées à votre lieu,
+                à votre budget et à vos rêves. Mon rôle n&apos;est pas
+                seulement de fleurir un événement, mais de créer une
+                atmosphère, un décor dont on se souvient longtemps après
+                que les fleurs se sont fanées.
+              </p>
+            </div>
+            <div className="prose">
+              <p>
+                Mon univers n&apos;a pas de style imposé. Romantique,
+                contemporain, méditerranéen, éditorial, naturel, luxuriant
+                ou minimaliste : je m&apos;adapte à chaque projet pour
+                créer une décoration qui ne ressemble qu&apos;à vous.
+                Lorsque la saison le permet, je privilégie les fleurs
+                françaises et les végétaux de qualité, avec la même
+                exigence pour les créations permanentes.
+              </p>
+              <p>
+                J&apos;aime les détails qui font toute la différence, les
+                compositions qui surprennent sans jamais en faire trop,
+                les décors qui révèlent un lieu plutôt que de le masquer.
+                Car, à mes yeux, les plus belles créations florales sont
+                celles qui semblent avoir toujours été à leur place.
+              </p>
+            </div>
           </div>
         </div>
       </section>
