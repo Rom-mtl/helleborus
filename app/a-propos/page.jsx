@@ -112,19 +112,56 @@ export default function APropos() {
         </div>
       </section>
 
-      <section className="section center">
-        <div className="container narrow">
-          <span className="eyebrow">Le nom</span>
-          <h2>Pourquoi Helleborus&nbsp;?</h2>
-          <FlowerDivider />
-          <p>
-            L&apos;hellébore — <em>Helleborus</em> en latin — est surnommée
-            la rose de Noël. C&apos;est l&apos;une des rares fleurs à
-            s&apos;épanouir au cœur de l&apos;hiver, discrète et tenace,
-            quand tout le reste sommeille. Elle incarne ce que nous
-            cherchons dans chaque création : une beauté sincère, qui ne
-            force rien, et qui dure.
-          </p>
+      <section className="section">
+        <div className="container">
+          <div className="center">
+            <span className="eyebrow">Le nom</span>
+            <h2>Pourquoi Helleborus&nbsp;?</h2>
+            <FlowerDivider />
+            <p className="lead narrow">
+              Maison Helleborus tire son nom de l&apos;hellébore,{' '}
+              <em>Helleborus</em> en latin, une fleur qui
+              m&apos;accompagne depuis toujours.
+            </p>
+          </div>
+          <div
+            className="grid-2"
+            style={{ marginTop: '2.5rem', alignItems: 'start' }}
+          >
+            <div className="prose">
+              <p>
+                Parmi toutes les fleurs, c&apos;est celle qui m&apos;émeut
+                le plus. Elle fleurit au cœur de l&apos;hiver, en janvier,
+                un mois qui m&apos;est particulièrement cher. Alors que la
+                nature semble encore endormie, elle s&apos;épanouit avec
+                une élégance discrète et une étonnante force. Capable de
+                résister aux froids les plus intenses, elle ne cherche
+                jamais à attirer le regard ; elle ne lutte pas contre
+                l&apos;hiver, elle choisit d&apos;y fleurir.
+              </p>
+              <p>
+                J&apos;aime ce qu&apos;elle symbolise : la douceur sans
+                fragilité, la simplicité sans effacement, la capacité à
+                traverser les saisons tout en restant profondément fidèle
+                à sa nature.
+              </p>
+            </div>
+            <div className="prose">
+              <p>
+                C&apos;est cette vision qui a inspiré Maison Helleborus. À
+                travers chaque création florale, je recherche cet
+                équilibre entre émotion et élégance, entre générosité et
+                justesse. J&apos;imagine des décors qui racontent une
+                histoire, révèlent un lieu et accompagnent les instants
+                les plus précieux avec naturel.
+              </p>
+              <p>
+                Parce qu&apos;au fond, les plus belles réalisations ne
+                sont pas toujours celles qui impressionnent le plus, mais
+                celles qui laissent une émotion durable.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
