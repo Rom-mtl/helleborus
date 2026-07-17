@@ -168,26 +168,41 @@ export default function APropos() {
       <section className="section section--soft center">
         <div className="container narrow">
           <span className="eyebrow">Engagements</span>
-          <h2>Notre façon de travailler</h2>
+          <h2>Notre engagement</h2>
           <FlowerDivider />
           <div className="meta-list" style={{ textAlign: 'left' }}>
             <p>
-              <strong>Fleurs de saison</strong>
-              Nous composons avec ce que la saison offre de plus beau —
-              c&apos;est plus durable, et toujours plus juste.
+              <strong>Écouter, comprendre, créer</strong>
+              Chaque projet est différent. C&apos;est pourquoi nous
+              prenons le temps d&apos;échanger avec vous,
+              d&apos;identifier vos attentes et de vous accompagner à
+              chaque étape. Notre objectif est simple : concevoir une
+              création qui vous ressemble et vous permettre
+              d&apos;avancer sereinement, en sachant que chaque détail est
+              maîtrisé.
             </p>
             <p>
-              <strong>Sur mesure</strong>
-              Pas de formule toute faite : chaque proposition est dessinée
-              pour votre lieu, votre lumière, votre histoire.
+              <strong>L&apos;exigence du détail</strong>
+              Une composition réussie ne tient jamais au hasard. Chaque
+              fleur, chaque texture, chaque couleur et chaque volume sont
+              pensés avec précision. Lorsque l&apos;élément idéal
+              n&apos;existe pas, nous le créons. Structures sur mesure,
+              adaptations techniques, solutions créatives : nous trouvons
+              toujours la meilleure façon de donner vie à votre projet.
             </p>
             <p>
-              <strong>Artisanat local</strong>
-              Des producteurs locaux, des circuits courts, des fleurs
-              françaises autant que la saison le permet : choisir à
-              quelques kilomètres plutôt qu&apos;à l&apos;autre bout du
-              monde, c&apos;est soutenir ceux qui cultivent bien — et
-              offrir des fleurs plus fraîches, qui durent.
+              <strong>Un savoir-faire au service de vos idées</strong>
+              Mariages, événements privés, entreprises, commerces ou
+              réceptions professionnelles… Chaque demande est différente.
+              C&apos;est cette diversité qui nourrit notre créativité et
+              nous pousse à imaginer des décors uniques, toujours adaptés
+              à votre lieu, votre budget et vos envies.
+            </p>
+            <p>
+              <strong>
+                L&apos;imprévu fait partie de notre métier. Trouver des
+                solutions aussi.
+              </strong>
             </p>
           </div>
           <p style={{ marginTop: '2.5rem' }}>
