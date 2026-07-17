@@ -21,8 +21,12 @@ export default function Nav() {
   // Ferme le menu mobile à chaque navigation
   useEffect(() => setOpen(false), [pathname]);
 
+  // Pages sans hero sombre : bandeau champagne clair, la nav doit rester lisible
+  const lightPage =
+    pathname.startsWith('/merci') || pathname.startsWith('/mentions-legales');
+
   return (
-    <header className={`nav ${scrolled || open ? 'nav--solid' : ''}`}>
+    <header className={`nav ${scrolled || open || lightPage ? 'nav--solid' : ''}`}>
       <div className="nav__inner container">
         <Link href="/" className="nav__brand" aria-label={`${site.name} — accueil`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -108,8 +112,8 @@ export default function Nav() {
         }
         .nav--solid .nav__links :global(a:hover),
         .nav--solid .nav__links :global(a.is-active) {
-          color: var(--plum);
-          border-bottom-color: var(--plum);
+          color: var(--mauve);
+          border-bottom-color: var(--mauve);
         }
         .nav__links :global(a.nav__insta) {
           display: inline-flex;

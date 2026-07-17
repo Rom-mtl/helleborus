@@ -20,9 +20,7 @@ export default function Merci() {
     >
       <span className="eyebrow">Message envoyé</span>
       <h1>Merci&nbsp;!</h1>
-      <div style={{ color: 'var(--blush)' }}>
-        <FlowerDivider />
-      </div>
+      <FlowerDivider />
       <p style={{ maxWidth: '480px', marginInline: 'auto' }}>
         Votre demande est bien arrivée. Nous revenons vers vous sous
         48&nbsp;h pour parler de votre projet.

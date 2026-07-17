@@ -8,9 +8,9 @@
   /* Couleurs — charte Helleborus (brand board 07/2026) */
   --paper: #f3ede2;      /* champagne — fond principal */
   --paper-soft: #e7e3d9; /* lin — sections alternées */
-  --ink: #2a2026;        /* texte, presque noir teinté prune */
-  --ink-soft: #5f525b;   /* texte secondaire, gris prune */
-  --plum: #4a1e3d;       /* prune (charte) — accents forts */
+  --ink: #763843;        /* texte — bordeaux du logo */
+  --ink-soft: #8f6869;   /* texte secondaire — trait clair du logo */
+  --plum: #e9dbc1;       /* champagne accent (remplace le prune) */
   --mauve: #8a6273;      /* rose poudré profond — labels lisibles */
   --rose: #c89aaa;       /* rose poudré (charte) — touches */
   --sage: #a7b09a;       /* sauge (charte) — touches végétales */
@@ -109,7 +109,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 
 .section--plum {
   background: var(--plum);
-  color: var(--paper);
+  color: var(--ink);
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -123,7 +123,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   z-index: -1;
   width: 340px;
   height: 340px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-32 -32 64 64'%3E%3Cg fill='none' stroke='%23e8d9d6' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(72)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(144)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(216)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(288)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Ccircle r='2.5'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / contain;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-32 -32 64 64'%3E%3Cg fill='none' stroke='%23763843' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(72)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(144)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(216)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Cpath transform='rotate(288)' d='M0,-6 C-7,-16 -5,-26 0,-29 C5,-26 7,-16 0,-6'/%3E%3Ccircle r='2.5'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / contain;
   opacity: 0.08;
 }
 
@@ -139,7 +139,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   transform: rotate(-24deg);
 }
 
-.section--plum .eyebrow { color: var(--blush); }
+.section--plum .eyebrow { color: var(--mauve); }
 
 .center { text-align: center; }
 
@@ -166,25 +166,25 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 
 .btn:hover {
   background: var(--plum);
-  color: var(--paper);
+  color: var(--ink);
   border-color: var(--plum);
 }
 
 .section--plum .btn:hover {
   background: var(--paper);
-  color: var(--plum);
+  color: var(--ink);
   border-color: var(--paper);
 }
 
 .btn--solid {
   background: var(--plum);
-  color: var(--paper);
+  color: var(--ink);
   border-color: var(--plum);
 }
 
 .btn--solid:hover {
   background: transparent;
-  color: var(--plum);
+  color: var(--ink);
 }
 
 /* ---------- Hero ---------- */
@@ -249,7 +249,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 
 .hero .btn:hover {
   background: var(--paper);
-  color: var(--plum);
+  color: var(--ink);
   border-color: var(--paper);
 }
 
@@ -354,8 +354,8 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 }
 
 .link:hover {
-  color: var(--plum);
-  border-color: var(--plum);
+  color: var(--ink);
+  border-color: var(--ink);
 }
 
 /* ---------- Galerie ---------- */
@@ -445,7 +445,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 .form select:focus,
 .form textarea:focus {
   outline: none;
-  border-bottom-color: var(--plum);
+  border-bottom-color: var(--ink);
 }
 
 .form textarea {
@@ -531,25 +531,25 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
 
 .footer {
   background: var(--plum);
-  color: rgba(243, 237, 226, 0.85);
+  color: var(--ink);
   padding-block: 4rem 2rem;
   font-size: 0.95rem;
 }
 
-.footer a:hover { color: #fff; }
+.footer a:hover { color: var(--mauve); }
 
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.5rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(243, 237, 226, 0.15);
+  border-bottom: 1px solid rgba(118, 56, 67, 0.2);
 }
 
 .footer__brand {
   font-family: var(--font-display);
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--ink);
   margin-bottom: 0.5rem;
 }
 
@@ -557,7 +557,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.05rem;
-  color: var(--blush);
+  color: var(--ink-soft);
   margin-bottom: 0.35rem;
 }
 
@@ -570,7 +570,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   margin-top: 0.9rem;
   font-size: 0.8rem;
   line-height: 1.6;
-  color: rgba(243, 237, 226, 0.55);
+  color: rgba(118, 56, 67, 0.6);
   max-width: 34ch;
 }
 
@@ -587,7 +587,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   font-size: 0.7rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--blush);
+  color: var(--mauve);
   margin-bottom: 0.75rem;
 }
 
@@ -599,5 +599,5 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
   padding-top: 2rem;
   font-size: 0.8rem;
   letter-spacing: 0.04em;
-  color: rgba(243, 237, 226, 0.6);
+  color: rgba(118, 56, 67, 0.65);
 }
